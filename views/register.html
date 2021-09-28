@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sstyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesregister.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="main-header">
+        
+        <div class="main-header-top-bar">
+            <a href="/"><img id="tamaño-logo" src="img/logo-mercado-liebre.svg" alt="Logo"></a>
+            
+            
+            
+
+            <h2 class="copy-header"><i class="fas fa-wallet"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+
+        </div>
+        <div class="search">
+            <input type="text" class="site-search" placeholder="Busca articulos, marcas y demas" >
+            <a href="" class="boton"> 
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+        <nav class="main-navbar">
+            <ul class="left-bar"> 
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-bar">
+                <li><a href="register">Crea tu cuenta<i class="far fa-id-card"></i></a> </li>
+                <li><a href="login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+        </nav>
+
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>            
+    </header>
+    
+
+<!--
+header
+-->
+
+    <main>
+        <form action="/register" method="POST" class="formulario-registro">
+        <section class="box-registro">
+            <section class="box-section-datos">
+                <div>
+                    <label for="nombre"><p>Nombre:</p></label>
+                    <input type="text" name="nombre" id="nombre" minlength="3" required>
+                </div>
+        
+                <div>
+                    <label for="apellido"><p>Apellido:</p></label>
+                    <input type="text" name="apellido" id="apellido"  minlength="3">
+                </div>
+
+                 <div>
+                    <label for="Domicilio"><p>Domicilio:</p></label>
+                    <input type="text" name="Domicilio" id="Domicilio" minlength="5">
+                </div>
+        
+                <div class="Fecha-de-nacimiento">
+                    <p>fecha de nacimiento:</p>
+                    <input type="date" name="fecha"  min="1921-09-21" max="2021-09-21" required>
+                </div>
+                <br>
+                <div class="perfil-compra-venta">
+                    <p>La cuenta estara destinada a:</p>
+                    <label><input type="radio" name="perfil-cuenta" value="Comprar">Comprar</label>
+                    <label><input type="radio"  name="perfil-cuenta" value="Vender">Vender</label>
+                    <label><input type="radio"  name="perfil-cuenta" value="Ambas">Ambas</label>
+                
+                </div>
+                <br>
+                <div class="interests">
+                    <p>Categorias de interes:</p>
+                    
+                    <label for="categorias de interes">Electro</label>
+                    <input type="checkbox" name="categorias de interes" value="Electro">  
+                   
+                    <label for="categorias de interes">Moda</label>
+                    <input type="checkbox" name="categorias de interes" value="Moda">
+
+                    <label for="categorias de interes">Hogar</label>
+                    <input type="checkbox" name="categorias de interes" value="Hogar">
+                    <br>
+                    <label for="categorias de interes">Jugueteria</label>
+                    <input type="checkbox" name="categorias de interes" value="Jugueteria">
+                    
+                    <label for="categorias de interes">Vida sana</label>
+                    <input type="checkbox" name="categorias de interes" value="Vida sana">
+                </div>
+                <br>
+            </section>
+            
+            <section class="box-section-datos-cuenta">
+                <div>
+                    <label for="User"><p>Nombre de usuario</p></label>
+                    <input type="text" name="User" id="User" required>  
+                </div>
+    
+                <div>
+                    <label for="Contraseña"><p>Contraseña</p></label>
+                    <input type="password" name="Contraseña" id="Contraseña" required>
+                </div>
+    
+                <div>
+                    <label for="Confirmar Contraseña"><p>Confirmar contraseña</p></label>
+                    <input type="password" name="Confirmar Contraseña" id="Comfirmar Contraseña" required>
+                </div>
+                
+                <div class="avatar">
+                    <label><p>Seleccionar una imagen para el perfil:</p></label>
+                    <input type="file" name="avatar" accept=".jpg, .png , .JPEG" >
+                </div>
+            </section>
+        </section>
+        
+        <div class="reiniciar-registrarse">    
+            <button type="reset"><p class="p3">Reiniciar formulario</p></button>
+            <button type="submit"><p class="p2">Registrarse</p></button> 
+        </div>
+
+        </form>
+    </main>
+
+
+
+<!--
+    foter
+-->
+
+<footer>
+    <section class="box-iconos-footer">
+    <div class="icono-footer">
+        <i class="fas fa-credit-card icono"></i>
+         <p><p><strong>Pagá con tarjeta o en efectivo</strong> </p>
+        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+        puntos de pago. ¡Y siempre es seguro!
+        </p>    
+    </div>
+
+    <div class="icono-footer">
+        <i class="fas fa-gift icono"></i>
+        <p><p><strong>Envío gratis desde $ 2.500</strong></p>
+        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+        productos. Es un beneficio de Mercado Puntos.
+         </p>
+        
+    </div>
+
+    <div class="icono-footer"> 
+        <i class="fas fa-user-shield icono"></i>
+        <p> <p><strong>Seguridad, de principio a fin</strong></p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+        porque estás siempre protegid@.</p>
+    
+    </div>
+</section>
+<br>
+    <div class="copyright">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>  
+    </div>
+</footer>
+</body>
+</html>

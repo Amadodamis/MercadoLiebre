@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/****************Register*************/
+
+
+.formulario-registro{
+    border: 1px #cecece solid;
+    border-radius: 15px;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+}
+
+.box-registro{
+    margin: 10px;
+    
+}
+
+.box-section-datos{
+    order: 2;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box-section-datos-cuenta{
+    order: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+@media (max-width:768px){
+    main{
+        margin:10px;
+    }
+
+    input[type="file"] {
+        color: transparent;
+    }
+
+    .formulario-registro{
+        font-weight: 600;
+    }
+
+    .box-registro input[type=text]{
+        width:90%;
+        height: 35px;
+        border:2px solid #aaa;
+        border-radius: 4px;
+        margin:8px 0;
+        outline:none;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .box-registro input[type=password]{
+        width:90%;
+        height: 35px;
+        border:2px solid #aaa;
+        border-radius: 4px;
+        margin:8px 0;
+        outline:none;
+        padding: 8px;
+    }
+
+    .reiniciar-registrarse{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .reiniciar-registrarse button{
+        width:40%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        transition:background-color 450ms;
+        background-color: grey;
+    }
+    
+    .reiniciar-registrarse button p{
+        font-size: 20px;
+        height: 48px;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .p2{
+        position: relative;
+        top:10px;
+    }
+    
+    .reiniciar-registrarse button:hover{
+        background-color:#0022AA;
+    }
+
+
+}
+
+/*** media queria solo para q p3 se vea correcto en tamaño */
+@media (min-width:485px) and (max-width:769px){
+    .p3{
+        position: relative;
+        top:10px;
+    }
+}
+
+
+@media (min-width:769px){
+    main{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+    .box-registro{
+        display: flex;
+    }
+    .box-registro input[type=text]{
+        width:60%;
+        height: 35px;
+        border:2px solid #aaa;
+        border-radius: 4px;
+        margin:8px 0;
+        outline:none;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .box-registro input[type=password]{
+        width:60%;
+        height: 35px;
+        border:2px solid #aaa;
+        border-radius: 4px;
+        margin:8px 0;
+        outline:none;
+        padding: 8px;
+    }
+
+    .reiniciar-registrarse{
+        display: flex;
+        height: 48px;
+        justify-content: space-around;
+    }
+    .reiniciar-registrarse button{
+        width:40%;
+        height: 100%;
+        border: none;
+        border-radius: 5px;
+        transition:background-color 450ms;
+        background-color: grey;
+    }
+    
+    .reiniciar-registrarse button p{
+        font-size: 20px;
+        text-align: center;
+        color: aliceblue;
+    }
+    
+    .reiniciar-registrarse button:hover{
+        background-color:#0022AA;
+    }
+}
